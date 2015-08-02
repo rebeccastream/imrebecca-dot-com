@@ -21,13 +21,17 @@
 /* #Page Styles
 ================================================== */
 
+
 /*  Header / Navigation / Footer
 ================================================== */
 	
 nav {
-	font-size:14px;
+	font-size: 1em;
 	background-color: #fff;
-	min-height: 700px;
+	position: fixed;
+	width: 22.9166667%;
+	height: 100%;
+	z-index: 100;
 	}
 
 nav h5 {
@@ -47,12 +51,18 @@ nav ul {
 	}	
 
 .left-nav {
-	float: left;
 	padding-left: 05.2083333%;
+	padding-right: 20px;
 }
 
+.tag {
+	font-size: .75em;
+	color: #abadae;
+}
+
+
 footer {
-	clear:both;
+	background-color: #eaeaea;
 	padding: 20px 5% 30px 5%;
 	text-align: left;
 }
@@ -62,6 +72,12 @@ footer p {
 }
 	
 footer hr { border: solid #CCC 1px;
+ }
+
+.footer-bottom {
+position: fixed;
+bottom:0;
+left: 0;
  }
 		
 
@@ -78,15 +94,18 @@ footer hr { border: solid #CCC 1px;
 }
 
 .home-page img {
-padding: 50px 0 50px 0;
-width: 100%;
+padding: 50px 0px 50px 0;
+margin: 0 25% 0 25% 0;
+width: 70%;
+position: absolute;
+right: 0;
 }
 	
 /* Adding the triangle 
 ===========================================================*/
 
 #down-triangle { 
-   margin: 0 52.5% 50px 47.5%;
+   margin: -20px 52.5% 50px 47.5%;
    width: 0; 
    height: 0;
    border-top: 25px solid #fff;
@@ -173,16 +192,16 @@ width: 100%;
 ================================================== */
 
 .project {
-float: right;
-background-color: #b1e4e3;
-margin-left: 23.9583334%;
-margin-top: -700px;
+width: 72.9166667%;
+height: auto;
+position: absolute;
+right: 0;
+background-color: #D0D8E2;
 }
 
 .project img {
 padding: 50px 0 50px 0;
 width: 90%;
-margin-left: 5%;
 }
 
 .description {
@@ -192,7 +211,6 @@ padding: 50px 1.5625% 50px 1.5625%;
 }
 	
 #content-left {
-
 float: left;
 padding-left: 3.125%;
 padding-right: 1.5625%;
@@ -208,7 +226,7 @@ float: right;
 	width: 25%;
 }
 
-#add-space-after {
+.add-space-after {
 	padding-bottom: 10px;
 }
 

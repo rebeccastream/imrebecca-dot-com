@@ -22,6 +22,14 @@
 	<link rel="stylesheet" href="../css/skeleton.css">
 	<link rel="stylesheet" href="../css/layout.css">
 
+
+
+  <!-- JS
+  ================================================== -->
+  <script type="text/javascript" src="../js/handlebars-v3.0.3.js"></script>
+
+
+
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -41,11 +49,9 @@
 	<!-- Primary Page Layout
 	================================================== -->
 
-<section class="page-content">
-
 <div class="container">
     
-        <nav class="one-third columns left-nav">
+        <nav class="columns.alpha left-nav"> <!-- start nav -->
             <h1 class="logo" />
   				<a href="../index.html">
    				 <img src="../img/rebecca.png" alt="Rebecca Van Singel" height="80em" />
@@ -53,35 +59,33 @@
       </h1>
 
 			<h5>Work</h5>
-			<ul id="add-space-after">
-            	<li class="button-m"><a href="#">A Better World Report</a></li>
-                <li class="button-m"><a href="#">AIGA</a></li>
-                <li class="button-m"><a href="#">ArtPrize HUB</a></li>
-                <li class="button-m"><a href="#">Herman Miller Sales Tools</a></li>
-                <li class="button-m"><a href="#">H&R Wedding</a></li>
-                <li class="button-m"><a href="#">NeoCon</a></li>
-                <li class="button-m"><a href="#">Pork Power Exhibit</a></li>
-                <li class="button-m"><a href="#">Reach for the Stars</a></li>
-                <li class="button-m"><a href="#">Walgreens Balance Rewards</a></li> 
-            </ul>
+     <div id="menu-placeholder" class="add-space-after"> </div>
+       <script id="menu-template" type="text/x-handlebars-template">
+        <ul>
+            {{#each menu}}
+                <li class="button-m"><a href="{{../link}}">{{name}} <p class="tag">{{tag}}</p></a></li>
+            {{/each}}
+        </ul>
+       </script>
+       <script type="text/javascript" src="../js/script.js" /></script>
 
             <hr />
             
             <h5>About Me</h5>
             <h5 id="add-space-after">Résumé</h5>
-          </nav> 
+        </nav> <!-- end nav -->
            
     <div class="project"> <!-- start project-content -->
 
         <div class="two-thirds columns"> <!-- start project hero -->
-          <img src="../img/neocon_hero.jpg">
+          <img src="../img/neocon/neocon_hero.png">
        
       <div class="two-thirds columns description">  <!-- start project description -->
       
       <div id="content-left" class="fifteen columns">  <!-- start project title -->
           <h3 id="project-title">NeoCon 2014</h3>
           <h4 id="project-company">Herman Miller</h4>
-        </div>
+        </div>   <!-- end project title -->
 
       <div id="content-left" class="eleven columns">  <!-- start project details -->
           <p id="callout"> Here is some text about me. La ti da. Cupcake ipsum dolor sit. Amet tiramisu unerdwear.com. Soufflé jujubes dragée sweet roll soufflé. 
@@ -120,24 +124,22 @@
        </div>  <!-- end project description -->
 
 
-          <img src="../img/neocon_hero.jpg" id="image-separator">
+          <img src="../img/neocon/neocon_illustration1.png">
 
-          <img src="../img/neocon_hero.jpg">
+          <img src="../img/neocon/neocon_group.png">
+
+          <img src="../img/neocon/neocon_illustration2.png">
         </div> <!--end project hero -->
 
-    </div> <!-- end project-content -->
+    </div>   <!-- end project content -->    
 
- </div><!-- end container -->
+</div> <!-- end container -->
 
-</section> <!-- end section -->
+<div class="container footer-bottom">
 
-
-          
-<section class="color"> <!-- start about section -->   
-
-<div class="container">  
-            
-      <footer>
+<br class="clear" />
+   
+    <footer >  <!-- start footer -->
       <hr />
       <p>©<script language="JavaScript" type="text/javascript">
     now = new Date
@@ -145,24 +147,17 @@
     if (theYear < 1900)
     theYear=theYear+1900
     document.write(theYear)
-</script> Rebecca Van Singel </p>
-      </footer>    
-      
-</div> <!-- end container -->
 
-</section> <!-- end section -->
-          
+</script> Rebecca Van Singel </p>
+      </footer>     <!-- end footer -->
+      
+    
+</div>  <!-- end container -->
+
+         
 
 <!-- End Document
 ================================================== -->
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-    <script src="../js/jquery.stickyscroll.js"></script>
-    <script>
-      $(document).ready(function() {
-        $('.left-nav').stickyScroll({ container: '.page-content' });
-      });
-    </script>
 
 
 </body>
