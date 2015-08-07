@@ -1,0 +1,94 @@
+
+/* Outside of containter
+===========================================================*/
+.all-content {
+  background-color: rgba(250, 250, 250, 1);
+
+}
+
+
+/* Left Content
+===========================================================*/
+
+.left-content {
+    position: relative;
+    height: 100%;
+    float: left;
+    background-color: rgba(10,0,205,0.5);
+}
+
+nav {
+	font-size: 1.6rem;
+	}
+
+nav h5 {
+  font-size: 1.7rem; letter-spacing: -.05rem; }
+  line-height: 3.5rem;
+
+}
+
+nav hr {
+	width: 25%;
+}
+
+nav ul {
+	margin-bottom: 30px;
+	}
+
+#left-nav {
+  position: absolute;
+  height: 90%;
+  padding-left: 05.2083333%;
+	padding-right: 20px;
+
+}
+
+#left-nav.fixed {
+  position: fixed;
+  top: 0;
+}
+
+.tag {
+	font-size: 1.3rem;
+	color: #abadae;
+}
+
+
+
+/* Adding the triangle
+===========================================================*/
+
+#down-triangle {
+   margin: -20px 52.5% 50px 47.5%;
+   width: 0;
+   height: 0;
+   border-top: 25px solid #fff;
+   border-left: 35px solid transparent;
+   border-right: 35px solid transparent;
+}
+
+
+
+/* Right Content (Home page)
+===========================================================*/
+
+.right-content {
+  height: auto;
+  background-color: #fe1111;
+}
+
+.home-page img {
+  opacity: .5;
+
+}
+
+
+
+/* Footer
+===========================================================*/
+
+#footer {
+  background-color: rgba(0, 255, 0, 0.75);;
+  clear: both;
+
+}

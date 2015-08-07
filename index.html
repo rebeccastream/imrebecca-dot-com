@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Hey, Hi, Hello</title>
+  <meta name="description" content="Portfolio website of Rebecca Van Singel">
+  <meta name="author" content="Rebecca Van Singel">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link href='http://fonts.googleapis.com/css?family=Amaranth:700|Open+Sans:400,300,600,300italic' rel='stylesheet' type='text/css'>
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/layout.css">
+
+  <!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script type="text/javascript" src="js/handlebars-v3.0.3.js"></script>
+  <script type="text/javascript" src="js/menu-scroll.js"></script>
+
+
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<div class="all-content"> <!-- start all-content -->
+  <div class="container"> <!-- start container -->
+
+<div class="top-page-content twelve columns">
+
+   <div class="one-third column social-float-parent"> <!-- start left side content -->
+    <nav id="social-float"> <!-- start nav -->
+            <h1 class="logo" />
+          <a href="index.html">
+           <img src="img/rebecca.png" alt="Rebecca Van Singel" height="80em" />
+        </a>
+      </h1>
+
+      <h5>Work</h5>
+      <div id="menu-placeholder" class="add-space-after"> </div>
+       <script id="menu-template" type="text/x-handlebars-template">
+        <ul>
+            {{#each menu}}
+                <li class="button-m"><a href="{{link}}">{{name}} <p class="tag">{{tag}}</p></a></li>
+            {{/each}}
+        </ul>
+       </script>
+       <script type="text/javascript" src="js/script.js" /></script>
+
+            <hr />
+
+            <h5>About Me</h5>
+            <h5 id="add-space-after">Résumé</h5>
+    </nav> <!-- end nav -->
+  </div> <!-- end left side content -->
+
+    <div class="offset-by-one-third columns eight right-content"> <!-- start rigth side content -->
+      <div class="home-page eight columns"> <!-- start project -->
+
+        <img src="img/groupBG.jpg">
+
+      <div> <!-- end project -->
+     </div> <!-- end right side content -->
+</div> <!-- end top-page-content -->
+
+  <div id="footer"> <!-- start footer div -->
+        <footer >  <!-- start footer -->
+
+       <div class="twelve columns" id="aboutme"> <!-- start about me div -->
+
+       <div id="down-triangle"></div> <!-- triangle -->
+
+          <h2>A blurb about me</h2>
+          <p> Here is some text about me. La ti da. Cupcake ipsum dolor sit. Amet tiramisu unerdwear.com. Soufflé jujubes dragée sweet roll soufflé. Muffin bonbon cheesecake wafer cheesecake jujubes. Toffee oat cake lollipop macaroon. Candy brownie sweet roll carrot cake toffee cookie. Gummies liquorice tootsie roll icing chupa chups lemon drops.
+           </p>
+
+        </div>  <!-- end about me div -->
+
+       &nbsp;
+
+       <hr />
+       <p>©<script language="JavaScript" type="text/javascript">
+     now = new Date
+     theYear=now.getYear()
+     if (theYear < 1900)
+     theYear=theYear+1900
+     document.write(theYear)
+
+ </script> Rebecca Van Singel </p>
+       </footer>     <!-- end footer -->
+
+</div> <!-- end footer div -->
+
+</div> <!-- end container -->
+
+</div> <!-- end all-content -->
+
+<!-- More JavaScript
+
+<script type="text/javascript" src="js/sticky-footer.js"></script>
+
+
+end more JavaScript -->
+
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
