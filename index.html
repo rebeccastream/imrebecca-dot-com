@@ -24,6 +24,7 @@
 
   <!-- JS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script type="text/javascript" src="js/handlebars-v3.0.3.js"></script>
   <script type="text/javascript" src="js/menu-scroll.js"></script>
 
@@ -41,10 +42,7 @@
 <div class="all-content"> <!-- start all-content -->
   <div class="container"> <!-- start container -->
 
-<div class="top-page-content twelve columns">
-
-   <div class="one-third column social-float-parent"> <!-- start left side content -->
-    <nav id="social-float"> <!-- start nav -->
+  <nav class="four columns left-nav" id="left-content"> <!-- start nav -->
             <h1 class="logo" />
           <a href="index.html">
            <img src="img/rebecca.png" alt="Rebecca Van Singel" height="80em" />
@@ -67,21 +65,21 @@
             <h5>About Me</h5>
             <h5 id="add-space-after">Résumé</h5>
     </nav> <!-- end nav -->
-  </div> <!-- end left side content -->
 
-    <div class="offset-by-one-third columns eight right-content"> <!-- start rigth side content -->
-      <div class="home-page eight columns"> <!-- start project -->
+    <div class="columns twelve right-content"> <!-- start rigth side content -->
+      <div class="home-page offset-by-four eight columns"> <!-- start project -->
 
         <img src="img/groupBG.jpg">
 
-      <div> <!-- end project -->
-     </div> <!-- end right side content -->
-</div> <!-- end top-page-content -->
+      </div> <!-- end project -->
 
-  <div id="footer"> <!-- start footer div -->
-        <footer >  <!-- start footer -->
+    </div> <!-- end right side content -->
 
-       <div class="twelve columns" id="aboutme"> <!-- start about me div -->
+    </div> <!-- end container -->
+
+
+<footer id="footer" class="twelve columns"> <!-- start footer -->
+       <div id="aboutme"> <!-- start about me div -->
 
        <div id="down-triangle"></div> <!-- triangle -->
 
@@ -90,23 +88,16 @@
            </p>
 
         </div>  <!-- end about me div -->
-
-       &nbsp;
-
        <hr />
        <p>©<script language="JavaScript" type="text/javascript">
-     now = new Date
-     theYear=now.getYear()
-     if (theYear < 1900)
-     theYear=theYear+1900
-     document.write(theYear)
+           now = new Date
+           theYear=now.getYear()
+           if (theYear < 1900)
+           theYear=theYear+1900
+           document.write(theYear)
+           </script> Rebecca Van Singel </p>
 
- </script> Rebecca Van Singel </p>
-       </footer>     <!-- end footer -->
-
-</div> <!-- end footer div -->
-
-</div> <!-- end container -->
+</footer>     <!-- end footer -->
 
 </div> <!-- end all-content -->
 

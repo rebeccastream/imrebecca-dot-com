@@ -16,7 +16,7 @@
 
 /* #Site Styles
 ================================================== */
-  
+
 
 /* #Page Styles
 ================================================== */
@@ -24,7 +24,7 @@
 
 /*  Header / Navigation / Footer
 ================================================== */
-	
+
 nav {
 	font-size: 1em;
 	background-color: #fff;
@@ -35,7 +35,7 @@ nav {
 	}
 
 nav h5 {
-	line-height: 35px;	
+	line-height: 35px;
 }
 
 nav hr {
@@ -48,7 +48,7 @@ nav ul {
 
 .logo {
 	margin:40px 0 20px -36px;
-	}	
+	}
 
 .left-nav {
 	padding-left: 05.2083333%;
@@ -70,16 +70,11 @@ footer {
 footer p {
 	font-size: .875em;
 }
-	
+
 footer hr { border: solid #CCC 1px;
  }
 
-.footer-bottom {
-position: fixed;
-bottom:0;
-left: 0;
- }
-		
+
 
 /* Home Page Content
 ================================================== */
@@ -87,8 +82,8 @@ left: 0;
 .color {
 	background: #eaeaea;
   	text-align:center;
-	padding: 0; }	
-	
+	padding: 0; }
+
 .home-page {
 	float: right;
 }
@@ -100,17 +95,17 @@ width: 70%;
 position: absolute;
 right: 0;
 }
-	
-/* Adding the triangle 
+
+/* Adding the triangle
 ===========================================================*/
 
-#down-triangle { 
+#down-triangle {
    margin: -20px 52.5% 50px 47.5%;
-   width: 0; 
+   width: 0;
    height: 0;
    border-top: 25px solid #fff;
-   border-left: 35px solid transparent; 
-   border-right: 35px solid transparent; 
+   border-left: 35px solid transparent;
+   border-right: 35px solid transparent;
 }
 
 
@@ -121,20 +116,20 @@ right: 0;
 	/* Smaller than standard 960 (devices and browsers) */
 	@media only screen and (max-width: 959px) {
 
-		
-		
+
+
 		}
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
 	@media only screen and (min-width: 768px) and (max-width: 959px) {
-				
-		.hero {	
+
+		.hero {
 			background-image: url(../img/groupBG_tablet.jpg);
 			background-repeat:no-repeat;
 			background-position:top;
 		}
-		
-		
+
+
 		}
 
 	/* All Mobile Sizes (devices and browser) */
@@ -145,46 +140,46 @@ right: 0;
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media only screen and (max-width: 479px) {
-		
-		.hero {	
+
+		.hero {
 			background-image:url(../img/groupBG_tablet.jpg);
 			background-repeat:no-repeat;
 			background-position:top;
 		}
-		
+
 		.top {
 			background: rgba(255, 255, 255, 0.9);
-			
+
 		}
-		
+
 		.main {
 			margin-left: 15%;
 		}
-		
-		
-		.left-nav { 
+
+
+		.left-nav {
 			text-align:center;
 			font-size: 22px;
 			line-height: 100px;
 		}
-		
-		
+
+
 		.left-nav li {
 			padding: 15px inherit 15px inherit;
-			
-		}	
-		
-		
-		#down-triangle { 
+
+		}
+
+
+		#down-triangle {
   			margin: 0 65% 50px 35%;
 
 		}
-		
-		
-		
-		
-		
-		
+
+
+
+
+
+
 		}
 
 
@@ -209,7 +204,7 @@ background-color:rgba(255,255,255,0.9);
 margin: 50px 0 50px 0;
 padding: 50px 1.5625% 50px 1.5625%;
 }
-	
+
 #content-left {
 float: left;
 padding-left: 3.125%;
@@ -259,7 +254,7 @@ float: right;
 	    src: url('../fonts/Amaranth-Bold.ttf') format('truetype');
 	    font-weight: bold;
 	    font-style: bold; }
-		
+
 @font-face {
 	    font-family: 'OpenSans-Regular';
 	    src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
@@ -272,4 +267,3 @@ float: right;
 	    src: url('../fonts/OpenSans-Light.ttf') format('truetype');
 	    font-weight: lighter;
 	    font-style: lighter; }
-
