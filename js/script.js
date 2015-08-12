@@ -10,8 +10,8 @@ var menuData = {
         { name: "Artprize HUB", tag: "Branding / Environmental / Experience", link: "work/artprize.html" },
         { name: "Herman Miller Sales Tools", tag: "Branding / Email / Print", link: "work/hermanmillersalestools.html" },
         { name: "Kairos Pinpoint", tag: "UX / UI / Animation / Prototyping", link: "work/kairospinpoint.html" },
-        { name: "NeoCon", tag: "Environmental / Branding / Game / Experience", link: "work/neocon.html" },
-        { name: "Pork Power Exhibit", tag: "Branding / Illustration / Interactive", link: "work/porkpower.html" },
+        { name: "NeoCon", tag: "Branding / Illustration / Interactive", link: "work/neocon.html" },
+        { name: "Pork Power Exhibit", tag: "Branding / Game Design / Experience", link: "work/porkpower.html" },
         { name: "Reach for the Stars", tag: "Print / Social Good", link: "work/reachforthestars.html" },
         { name: "River Bank Run", tag: "Environmental / Print / Branding", link: "work/riverbankrun.html" },
     ]

@@ -18,7 +18,9 @@
 <link href='http://fonts.googleapis.com/css?family=Amaranth:700|Open+Sans:400,300,600,300italic' rel='stylesheet' type='text/css'>
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<link rel="stylesheet" href="../stylesheets/main.css">
+	<link rel="stylesheet" href="../stylesheets/normalize.css">
+	<link rel="stylesheet" href="../stylesheets/skeleton.css">
+	<link rel="stylesheet" href="../stylesheets/layout.css">
 
 
   <!-- JS
@@ -51,7 +53,7 @@
 	 			</a>
 	 		</h1>
 
-	 		<h5>Work</h5>
+	 		<h4>Work</h4>
 	 		<div id="menu-placeholder"> </div>
 	 		 <script id="menu-template" type="text/x-handlebars-template">
 	 			<ul>
@@ -64,26 +66,26 @@
 
 	 					<hr />
 
-	 					<h5>Résumé</h5>
+	 					<h4><a href="#">Résumé</a></h4>
+
 	 	</nav> <!-- end nav -->
 
-    <div class="columns twelve right-content project"> <!-- start project-content -->
+    <div class="columns twelve project"> <!-- start project-content -->
 
         <div class="home-page offset-by-four eight columns"> <!-- start project hero -->
           <img src="../img/neocon/neocon_hero.png">
 
-      <div id="project-details-left" class="twelve columns description">  <!-- start project description -->
+      <div class="twelve columns description">  <!-- start project description -->
 
-      <div class="twelve columns">  <!-- start project title -->
+      <div id="project-details-left" class="twelve columns">  <!-- start project title -->
           <h2 id="project-title">NeoCon 2014</h2>
           <h3 id="project-company">Herman Miller</h3>
         </div>   <!-- end project title -->
 
-      <div id="project-details-left" class="seven columns">  <!-- start project details -->
+      <div id="project-details-left" class="eight columns">  <!-- start project details -->
           <p id="callout"> Here is some text about me. La ti da. Cupcake ipsum dolor sit. Amet tiramisu unerdwear.com. Soufflé jujubes dragée sweet roll soufflé.
           </p>
 
-<br />
           <h4>Solution</h4>
           <p> Here is some text about me. La ti da. Cupcake ipsum dolor sit. Amet tiramisu unerdwear.com. Soufflé jujubes dragée sweet roll soufflé. Muffin bonbon cheesecake wafer cheesecake jujubes. Toffee oat cake lollipop macaroon. Candy brownie sweet roll carrot cake toffee cookie. Gummies liquorice tootsie roll icing chupa chups lemon drops.
           </p>
@@ -99,7 +101,7 @@
         </ul>
 
         <h4>Illustrator</h4>
-        <ul id="add-space-after">
+        <ul class="add-space-after">
           <li>Daniel Carlson</li>
         </ul>
 
@@ -134,14 +136,16 @@
 
 <footer id="footer" class="twelve columns"> <!-- start footer -->
 
-       <hr />
-       <p>©<script language="JavaScript" type="text/javascript">
-           now = new Date
-           theYear=now.getYear()
-           if (theYear < 1900)
-           theYear=theYear+1900
-           document.write(theYear)
-           </script> Rebecca Van Singel </p>
+			<div id="copyright">
+			<hr />
+			<p>©<script language="JavaScript" type="text/javascript">
+					now = new Date
+					theYear=now.getYear()
+					if (theYear < 1900)
+					theYear=theYear+1900
+					document.write(theYear)
+					</script> Rebecca Van Singel </p>
+		 </div>
 
 </footer>     <!-- end footer -->
 

@@ -2,7 +2,7 @@
 /* Outside of containter
 ===========================================================*/
 .all-content {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(210, 205, 155, 1);
 
 }
 
@@ -20,7 +20,8 @@
     margin-top:0px;
     bottom: auto !important;
     float: left;
-    height: 72%
+    height: 100%;
+    width: 30.6666666667%;
 }
 
 
@@ -37,11 +38,12 @@ nav h5 {
 nav hr {
   border: solid #CCC 1px;
 	width: 25%;
-  margin: 0 0 4rem 0;
+  margin: 0 0 2rem 0;
 }
 
 nav ul {
-	margin-bottom: 30px;
+  margin-top: 1rem;
+	margin-bottom: 2.5rem;
 	}
 
 .logo {
@@ -50,11 +52,7 @@ nav ul {
 
 .left-nav {
   padding: 0 2rem 5rem 05.2083333%;
-  background-color:rgba(255, 255, 255, .75);
-}
-
-nav li {
-  margin-bottom: 1.25rem;
+  background-color:rgba(255, 255, 255, 1);
 }
 
 .tag {
@@ -68,10 +66,6 @@ nav li {
 /* Right Content (Home page)
 ===========================================================*/
 
-.right-content {
-  float: right;
-}
-
 .home-page img {
   width: 100%;
 }
@@ -84,54 +78,55 @@ nav li {
 ==========================================================*/
 
 .project {
-width: 72.9166667%;
-height: auto;
-position: absolute;
-right: 0;
-background-color: #D0D8E2;
+background-color: #ffffff;
 }
 
 .project img {
-padding: 50px 0 50px 0;
+padding: 5rem 0;
 width: 90%;
 }
 
 .description {
-background-color:rgba(255,255,255,0.9);
-margin: 50px 0 50px 0;
-padding: 50px 1.5625% 50px 1.5625%;
+background-color:rgba(255, 255, 255, 0.85);
+margin: 5rem 0;
+padding: 3rem 1.5625%;
 }
 
-#content-left {
+#project-title {
+  margin-bottom: 0;
+}
+
+#project-company {
+  margin-bottom: 4rem;
+}
+
+#project-details-left {
 float: left;
 padding-left: 3.125%;
 padding-right: 1.5625%;
+margin-left: 0;
 
 }
 
-#content-right {
+#project-details-right {
 float: right;
 }
 
-#content-right hr {
+#project-details-right hr {
 	width: 25%;
 }
 
 .add-space-after {
-	padding-bottom: 10px;
+	padding-bottom: 1rem;
 }
 
 #image-separator {
 	border-bottom: 1px solid #ffffff;
 }
 
-#project-title {
-  margin-bottom: 6px;
-}
+hr.top {
+    margin-top: 0;}
 
-#project-company {
-  margin-bottom: 1.5em;
-}
 
 
 
@@ -163,6 +158,10 @@ footer hr {
 
 #aboutme p {
     font-size: 1.6rem;
+}
+
+#copyright {
+  height: 8rem;
 }
 
 /* Adding the triangle */
