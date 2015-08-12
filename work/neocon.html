@@ -1,45 +1,37 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<html lang="en">
 <head>
 
-	<!-- Basic Page Needs
-  ================================================== -->
-	<meta charset="utf-8">
-	<title>Rebecca Van Singel's Portfolio | NeoCon</title>
-	<meta name="description" content="">
-	<meta name="author" content="Rebecca Van Singel">
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Hey, Hi, Hello</title>
+  <meta name="description" content="Portfolio website of Rebecca Van Singel">
+  <meta name="author" content="Rebecca Van Singel">
 
-	<!-- Mobile Specific Metas
-  ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- CSS
-  ================================================== -->
-	<link rel="stylesheet" href="../css/styles.css">
-	<link rel="stylesheet" href="../css/skeleton.css">
-	<link rel="stylesheet" href="../css/layout.css">
-
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link href='http://fonts.googleapis.com/css?family=Amaranth:700|Open+Sans:400,300,600,300italic' rel='stylesheet' type='text/css'>
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="stylesheet" href="../stylesheets/main.css">
 
 
   <!-- JS
-  ================================================== -->
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script type="text/javascript" src="../js/handlebars-v3.0.3.js"></script>
+  <script type="text/javascript" src="../js/menu-scroll.js"></script>
 
 
 
-	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-
-	<!-- Favicons
-	================================================== -->
-	<link rel="shortcut icon" href="../img/favicon.ico">
-	<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="../images/favicon.png">
 
 </head>
 <body>
@@ -48,79 +40,82 @@
 
 	<!-- Primary Page Layout
 	================================================== -->
+ <div class="all-content"> <!-- start all-content -->
 
-<div class="container">
-    
-        <nav class="columns.alpha left-nav"> <!-- start nav -->
-            <h1 class="logo" />
-  				<a href="../index.html">
-   				 <img src="../img/rebecca.png" alt="Rebecca Van Singel" height="80em" />
- 				</a> 
-      </h1>
+ <div class="container">
 
-			<h5>Work</h5>
-     <div id="menu-placeholder" class="add-space-after"> </div>
-       <script id="menu-template" type="text/x-handlebars-template">
-        <ul>
-            {{#each menu}}
-                <li class="button-m"><a href="{{../link}}">{{name}} <p class="tag">{{tag}}</p></a></li>
-            {{/each}}
-        </ul>
-       </script>
-       <script type="text/javascript" src="../js/script.js" /></script>
+	 <nav class="four columns left-nav" id="left-content"> <!-- start nav -->
+	 					<h1 class="logo" />
+	 				<a href="../index.html">
+	 				 <img src="../img/rebecca.png" alt="Rebecca Van Singel" height="80em" />
+	 			</a>
+	 		</h1>
 
-            <hr />
-            
-            <h5>About Me</h5>
-            <h5 id="add-space-after">Résumé</h5>
-        </nav> <!-- end nav -->
-           
-    <div class="project"> <!-- start project-content -->
+	 		<h5>Work</h5>
+	 		<div id="menu-placeholder"> </div>
+	 		 <script id="menu-template" type="text/x-handlebars-template">
+	 			<ul>
+	 					{{#each menu}}
+	 							<li class="button-m"><a href="../{{link}}">{{name}} <p class="tag">{{tag}}</p></a></li>
+	 					{{/each}}
+	 			</ul>
+	 		 </script>
+	 		 <script type="text/javascript" src="../js/script.js" /></script>
 
-        <div class="two-thirds columns"> <!-- start project hero -->
+	 					<hr />
+
+	 					<h5>Résumé</h5>
+	 	</nav> <!-- end nav -->
+
+    <div class="columns twelve right-content project"> <!-- start project-content -->
+
+        <div class="home-page offset-by-four eight columns"> <!-- start project hero -->
           <img src="../img/neocon/neocon_hero.png">
-       
-      <div class="two-thirds columns description">  <!-- start project description -->
-      
-      <div id="content-left" class="fifteen columns">  <!-- start project title -->
-          <h3 id="project-title">NeoCon 2014</h3>
-          <h4 id="project-company">Herman Miller</h4>
+
+      <div id="project-details-left" class="twelve columns description">  <!-- start project description -->
+
+      <div class="twelve columns">  <!-- start project title -->
+          <h2 id="project-title">NeoCon 2014</h2>
+          <h3 id="project-company">Herman Miller</h3>
         </div>   <!-- end project title -->
 
-      <div id="content-left" class="eleven columns">  <!-- start project details -->
-          <p id="callout"> Here is some text about me. La ti da. Cupcake ipsum dolor sit. Amet tiramisu unerdwear.com. Soufflé jujubes dragée sweet roll soufflé. 
-          </p> 
+      <div id="project-details-left" class="seven columns">  <!-- start project details -->
+          <p id="callout"> Here is some text about me. La ti da. Cupcake ipsum dolor sit. Amet tiramisu unerdwear.com. Soufflé jujubes dragée sweet roll soufflé.
+          </p>
 
 <br />
-          <h5>Solution</h5>
+          <h4>Solution</h4>
           <p> Here is some text about me. La ti da. Cupcake ipsum dolor sit. Amet tiramisu unerdwear.com. Soufflé jujubes dragée sweet roll soufflé. Muffin bonbon cheesecake wafer cheesecake jujubes. Toffee oat cake lollipop macaroon. Candy brownie sweet roll carrot cake toffee cookie. Gummies liquorice tootsie roll icing chupa chups lemon drops.
-          </p> 
+          </p>
 
         </div> <!-- end project details -->
 
-   <aside id="content-right" class="four columns"><!-- start project aside -->
+   <aside id="project-details-right" class="four columns"><!-- start project aside -->
         <hr class="top"/>
-        <h5>Creative Director</h5>
-        <ul> 
+        <h4>Creative Director</h4>
+        <ul>
           <li>Sofia Svensson-Huang</li>
             <li>David Simon</li>
         </ul>
 
-        <h5>Illustrator</h5>
-        <ul id="add-space-after"> 
+        <h4>Illustrator</h4>
+        <ul id="add-space-after">
           <li>Daniel Carlson</li>
         </ul>
 
         <hr />
-        <h5>Deliverables</h5>
-        <ul> 
-          <li>Interactive PDFs</li>
+        <h4>Deliverables</h4>
+        <ul>
+          <li>Interactive PDF Tool</li>
           <li>Isometric Illustrations</li>
+					<li>Envrionmental Graphics</li>
+					<li>Printed Handbook</li>
+					<li>Signage</li>
         </ul>
 
       </aside> <!-- end project aside -->
 
-            
+
        </div>  <!-- end project description -->
 
 
@@ -131,30 +126,29 @@
           <img src="../img/neocon/neocon_illustration2.png">
         </div> <!--end project hero -->
 
-    </div>   <!-- end project content -->    
+    </div>   <!-- end project content -->
 
 </div> <!-- end container -->
 
-<div class="container footer-bottom">
 
-<br class="clear" />
-   
-    <footer >  <!-- start footer -->
-      <hr />
-      <p>©<script language="JavaScript" type="text/javascript">
-    now = new Date
-    theYear=now.getYear()
-    if (theYear < 1900)
-    theYear=theYear+1900
-    document.write(theYear)
 
-</script> Rebecca Van Singel </p>
-      </footer>     <!-- end footer -->
-      
-    
-</div>  <!-- end container -->
+<footer id="footer" class="twelve columns"> <!-- start footer -->
 
-         
+       <hr />
+       <p>©<script language="JavaScript" type="text/javascript">
+           now = new Date
+           theYear=now.getYear()
+           if (theYear < 1900)
+           theYear=theYear+1900
+           document.write(theYear)
+           </script> Rebecca Van Singel </p>
+
+</footer>     <!-- end footer -->
+
+
+</div>  <!-- end all content -->
+
+
 
 <!-- End Document
 ================================================== -->
