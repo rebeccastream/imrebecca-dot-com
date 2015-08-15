@@ -46,6 +46,15 @@ nav ul {
 	margin-bottom: 2.5rem;
 	}
 
+.menu-item a {
+  text-decoration: none;
+}
+
+.menu-item a:hover {
+  color: #dcedfe;
+}
+
+
 .logo {
 	margin:40px 0 20px -36px;
 	}
